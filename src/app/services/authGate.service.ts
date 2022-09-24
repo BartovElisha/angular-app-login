@@ -1,5 +1,5 @@
 
-// This is amanual created file !!!!!
+// This is a manual created file !!!!!
 
 import { Injectable } from "@angular/core";
 import { CanActivate } from "@angular/router";

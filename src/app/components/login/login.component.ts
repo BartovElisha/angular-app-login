@@ -32,10 +32,4 @@ export class LoginComponent implements OnInit {
       this.route.navigate(['/dashboard']);
     }  
   }
-
-  logout(): void {
-    
-    this.route.navigate(['/dashboard']);  
-  }
-
 }

@@ -1,5 +1,7 @@
 <div class="container mt-2">
   <h2 style="color: rosybrown; text-align: center;">Please Login to the Application</h2>
+  <h6 style="color: red; text-align: left;">Test Mail is alisher.b@gmail.com</h6>
+  <h6 style="color: red; text-align: left;">Test Password is 1234</h6>
   <div class="mb-3">
     <label for="email" class="form-label">Email</label>
     <input type="text" class="form-control" class="form-control" id="email" [(ngModel)]="formData.email"
@@ -10,7 +12,6 @@
     <input type="password" class="form-control" id="password" [(ngModel)]="formData.password" #password>
   </div>
   <div class="d-grid gap-2">
-    <!-- [ngModel] -->
     <button (click)="login()" class="btn btn-secondary" type="button">Login</button>
   </div>
 </div>

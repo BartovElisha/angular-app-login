@@ -8,12 +8,16 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
 import { IfUserLogin } from './services/authGate.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LogoutComponent } from './components/logout/logout.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    LogoutComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
