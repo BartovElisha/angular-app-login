@@ -15,6 +15,7 @@ export class UserService {
     if(this._isLoggedIn) {
       return true;
     }
+    // Go to login page if still not logged in !!!
     this.route.navigate(['/login']);
     return false;
   }
