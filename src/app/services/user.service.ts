@@ -11,10 +11,8 @@ export class UserService {
   isLoggedIn(): boolean {
     let isLoggedIn = localStorage.getItem('isLoggedIn');
     
-    if(isLoggedIn) {
-      if(JSON.parse(isLoggedIn)) {
-        return true;
-      }      
+    if(isLoggedIn && JSON.parse(isLoggedIn)) {
+        return true;          
     }
 
     // Go to login page if still not logged in !!!
