@@ -9,14 +9,26 @@ export class UserService {
   constructor(private route: Router) { }
 
   private _isLoggedIn: boolean = false;
-  // private _isLoggedIn: boolean = true;
 
-  isLoggedIn() {
+  isLoggedIn(): boolean {
     if(this._isLoggedIn) {
       return true;
     }
     // Go to login page if still not logged in !!!
     this.route.navigate(['/login']);
     return false;
+  }
+
+  checkEmailAndPassword(email:string, password:string): boolean {
+    if(email == 'alisher.b@gmail.com' && password == '1234') {
+      this._isLoggedIn = true;
+      return true;
+    }
+    return false;
+  }
+
+  logout() {
+    this._isLoggedIn = false;
+    this.route.navigate(['/login']);
   }
 }

@@ -1,3 +1,16 @@
 <div class="container mt-2">
   <h2 style="color: rosybrown; text-align: center;">Please Login to the Application</h2>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="text" class="form-control" class="form-control" id="email" [(ngModel)]="formData.email"
+      placeholder="email@domain.com" #email>
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" [(ngModel)]="formData.password" #password>
+  </div>
+  <div class="d-grid gap-2">
+    <!-- [ngModel] -->
+    <button (click)="login()" class="btn btn-secondary" type="button">Login</button>
+  </div>
 </div>
